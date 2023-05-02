@@ -12,6 +12,7 @@ import {useState} from "react";
 
 import Slider from "../components/Slider";
 import FeaturedProducts from "../components/FeaturedProducts";
+import Categories from "../components/Categories";
 
 
-export { createBrowserRouter, Outlet, Footer, NavBar, Home, Products, Product,RouterProvider,router, Icon, Link,data, Slider, useState, FeaturedProducts};
+export { createBrowserRouter, Outlet, Footer, NavBar, Home, Products, Product,RouterProvider,router, Icon, Link,data, Slider, useState, FeaturedProducts, Categories};
