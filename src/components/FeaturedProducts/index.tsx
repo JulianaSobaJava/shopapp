@@ -9,6 +9,7 @@ const data = [
     title: "Long Sleeve Graphic T-shirt",
     oldPrice: 19,
     price: 12,
+    isNew: true,
   },
   {
     id: 2,
@@ -23,6 +24,7 @@ const data = [
     title: "Long Sleeve Graphic T-shirt",
     oldPrice: 19,
     price: 12,
+    isNew: true,
   },
   {
     id: 4,

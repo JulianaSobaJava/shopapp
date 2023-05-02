@@ -1,4 +1,4 @@
-import {FeaturedProducts, Slider} from "../../utils/exports";
+import {Categories, FeaturedProducts, Slider} from "../../utils/exports";
 import "./home.scss"
 
 export default function Home() {
@@ -6,6 +6,7 @@ export default function Home() {
  <div className="home">
   <Slider/>
   <FeaturedProducts type="featured"/>
+  <Categories/>
   <FeaturedProducts type="trending"/>
  </div>
   )
