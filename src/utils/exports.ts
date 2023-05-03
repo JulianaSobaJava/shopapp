@@ -7,7 +7,7 @@ import Products from "../pages/Products";
 import router from '../routes/route';
 
 import * as Icon from '@mui/icons-material';
-import {dataImage, data} from "./mocks";
+import {dataImage, data, productImages} from "./mocks";
 import {useState} from "react";
 
 import Slider from "../components/Slider";
@@ -18,6 +18,7 @@ import NavBar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Card from "../components/Card";
 import List from "../components/List";
+import CartModal from "../components/Cart";
 
 
-export { createBrowserRouter, Outlet, Footer, NavBar, Home, Products, Product,RouterProvider,router, Icon, Link,data,dataImage, Slider, useState, FeaturedProducts, Categories, Contact, useParams, Card, List};
+export { createBrowserRouter, Outlet, Footer, NavBar, Home, Products, Product,RouterProvider,router, Icon, Link,data,dataImage, productImages , Slider, useState, FeaturedProducts, Categories, Contact, useParams, Card, List, CartModal};

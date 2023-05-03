@@ -1,7 +1,9 @@
-import { Icon, Link } from "../../utils/exports";
+import { Icon, Link , useState, CartModal} from "../../utils/exports";
 import "./Navbar.scss";
 
 export default function NavBar() {
+
+  const [openCartModal, setOpenCartModal] = useState(false);
   return (
     <div className="navbar">
       <div className="wrapper">
@@ -60,13 +62,14 @@ export default function NavBar() {
             <Icon.Search />
             <Icon.PersonOutlined />
             <Icon.FavoriteBorderOutlined />
-            <div className="cartIcon">
+            <div className="cartIcon" onClick={()=>setOpenCartModal(!openCartModal)}>
               <Icon.ShoppingCartOutlined />
               <span>0</span>
             </div>
           </div>
         </div>
       </div>
+      {openCartModal && <CartModal/>}
     </div>
   );
 }
