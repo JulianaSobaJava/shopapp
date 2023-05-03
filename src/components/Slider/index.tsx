@@ -1,4 +1,4 @@
-import {data, Icon, useState} from "../../utils/exports";
+import {dataImage, Icon, useState} from "../../utils/exports";
 import "./Slider.scss"
 
 export default function Slider() {
@@ -15,9 +15,9 @@ export default function Slider() {
   return (
     <div className="slider">
       <div className="container" style={{transform:`translateX(-${currentSlider*100}vw)`}}>
-        <img src={data[0]} alt="" className="image_banner" />
-        <img src={data[1]} alt="" className="image_banner" />
-        <img src={data[2]} alt="" className="image_banner" />
+        <img src={dataImage[0]} alt="" className="image_banner" />
+        <img src={dataImage[1]} alt="" className="image_banner" />
+        <img src={dataImage[2]} alt="" className="image_banner" />
       </div>
       <div className="icons">
         <div className="icon" onClick={prevSlide}>
